@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    h2{
+      text-align: center;
+  
+    }
+    .d-flex {
+      width: 100%;
+     
+    }
+    #work {
+      background-color: black;
+    }
+    .carousel-item {
+    left: 10;
+    transition: all 0.3s ease-out;
+}
+.bg{
+ 
+}
+  </style>
+</head>
+<body>
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid bg-warning">
+      <a class="navbar-brand" href="#">Tech Mart Mobile&Accessories</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="file:///C:/Users/shazz/Desktop/mernoct/html/bootstrap/login%20page.html#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"> Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Cart</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop by Category
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Phones&Wearables</a></li>
+                <li><a class="dropdown-item" href="#">Television&Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                <li><a class="dropdown-item" href="#">Smart Devices</a></li>
+                <li><a class="dropdown-item" href="#">Computer&Tablets</a></li>
+                <li><a class="dropdown-item" href="#">Audio&Video</a></li>
+               
+          
+        
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <form class="fa-solid fa-magnifying-glass fa-lg d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="what are you looing for?" aria-label="Search">
+    <button class="btn btn-outline-" type="submit">Search</button>
+  </form>
+</div>
+
+ 
+     
+         <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10">
+            <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1732190928/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Nov/22112024/Desktop/HP_Rotating_iPhone16pro_22Nov2024_ban4y1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Iphones Offers</h5>
+              <p class="text-light">Extrime Offer's in Christmas</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1732251530/Croma%20Assets/CMS/LP%20Page%20Banners/2024/Sanity/HP/Nov/22112024/HP_Rotating_Monitor_22Nov2024_kbeayj.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">Moniter Big Offers</h5>
+              <p class="text-light">Extrime Offer's in Christmas</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1732190929/Croma%20Assets/CMS/Homepage%20Banners/HP%20Rotating/2024/Nov/22112024/Desktop/HP_Rotating_MacBooks_22Nov2024_ytjv0m.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-light">TV Big Budget's</h5>
+              <p class="text-light">Extrime Offer's in Christmas</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="p">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </footer>
+    <div class="bg-dark text-light">
+        <h1 class="text-center">Treat yourself to a new Mobile Phone
+            Experience</h1>
+
+            <p class="text-center mt-4">The world at your fingertips! Work, socialise, book a ride, play games, listen to music, watch your favourite shows, take a photo, or simply make a call! Buy a Mobile Phone from Croma that does it all and then some.cell phone, also known as a mobile phone, is a portable device that allows users to communicate and access a variety of services and applications. Cell phones use a combination of technologies, such as computing, programming, and the internet, to enable wireless communication</p>
+    
+    </div>
+   <div id="work">
+    <h4 class="text-light mb-2">HANDPICKED FOR YOU</h4>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <div class="card" style="width: 18rem;">
+            <a href="https://easyphones.co.in/search?type=product&options%5Bprefix%5D=last&q=11">
+             <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT-bp4NISzOeB8d6D4kLzlW0y6MxXj4WUlZEddRPlcXqnSU6yD8mHcpJpaa3WxLVXGUo8FZBjTk47U61SvCLPhaD8lIzfC9gkq_h2ykLrOcpXqmQL53QbtEgqwE5ZKFjPZjFLFbReM&usqp=CAc" class="card-img-top" alt="..."></a>  
+            <div class="card-body">
+              <h5 class="card-title">Apple iPhone 11 Pro - Refurbished</h5>
+          
+              <a href="#" class="btn btn-primary">₹26,399
+                ₹90,700</a></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <a href="https://easyphones.co.in/search?type=product&options%5Bprefix%5D=last&q=15">
+              <img src="data:image/webp;base64,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" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apple iPhone 15 (128 GB) - Blue</h5>
+            
+                <a href="#" class="btn btn-primary">-17% ₹65,900</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <a href="https://easyphones.co.in/search?type=product&options%5Bprefix%5D=last&q=14">
+              <img src="https://easyphones.co.in/cdn/shop/files/WhatsApp-Image-2024-06-17-at-12.01.49_882ecddc.webp?v=1723228950&width=940" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apple iPhone 14 Plus (128 GB)</h5>
+
+                <a href="#" class="btn btn-primary">-13% ₹69,900</a></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="col-4">
+            <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://easyphones.co.in/search?type=product&options%5Bprefix%5D=last&q=13">
+                 <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRQhGXlcDnd7gDmogEZihuqT3NHY5uwI3J1PT3vG0NgDid9wp5XPtlHjxk76CTDSbUtLimW4qB9S2HFBoAORC2wEXUcU-ZkInP3yzw8r_D97m5kzERkNBmVgYuSNvaYFOFa7soHktqtAeY&usqp=CAc" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Apple iPhone 13 Pro Max</h5>
+ 
+                  <a href="" class="btn btn-primary">-23% ₹99,900</a></a>
+                </div>
+              </div>
+            </div>
+         </div>
+        </div>
+      </div>
+      <h4 class="text-light mt-4">Trendig Brands</h4>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.amazon.in/Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CQYGF1QY/ref=asc_df_B0CQYGF1QY/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=8904429251251836117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2285976103821&psc=1&mcid=cad13f2634463189a01e9b9147eb0341&gad_source=1">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS-z_D2jp3siviVg4-SRZ7Kl2e7AuEWWeLtgwcNFsqlDGPuKaOgF8yrrjKaj8MTQJL-ThnMsJAZk8vrzYeTH6eitYGKQyOLaHV-l9GmcSM7ekWvKqxPmZAdJIa2BH36p0fmjfKvPIY&usqp=CAc" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Gray, 12GB, 512GB Storage)</h5>
+                  <p class="card-text">-9% ₹1,31,999
+                    M.R.P.: ₹1,44,999</p>
+                  <a href="https://www.amazon.in/Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CQYGF1QY/ref=asc_df_B0CQYGF1QY/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=8904429251251836117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2285976103821&psc=1&mcid=cad13f2634463189a01e9b9147eb0341&gad_source=1" class="btn btn-warning">Buy Now</a></a>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.amazon.in/iQOO-Storage-Snapdragon-Processor-Brightness/dp/B07WHR9ZJ9/ref=asc_df_B07WHR9ZJ9/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=8904429251251836117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2358706320878&mcid=626ab58fc1043d80b145a5600d333fc9&gad_source=1&th=1">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRXhypG7knZSkypVzQTfSxxI4zj-CB28DiF49BK-daNS9O7pEJYbNGDgLX27oXwqB_vMYchvq2CmXsltN2daIzQvt7ch2oMoS3_bVT-rEfd60DFXx4YO2131E1Ch9UyFsUzk2-XsQ&usqp=CAc" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">iQOO Z9s Pro 5G Luxe Marble, 8Gb Ram, 128Gb Storage</h5>
+                  <p class="card-text">-17% ₹24,998
+                    M.R.P.: ₹29,999.00M.R.P.: ₹29,999</p>
+                    <a href="https://www.amazon.in/iQOO-Storage-Snapdragon-Processor-Brightness/dp/B07WHR9ZJ9/ref=asc_df_B07WHR9ZJ9/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=8904429251251836117&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2358706320878&mcid=626ab58fc1043d80b145a5600d333fc9&gad_source=1&th=1" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.amazon.in/OnePlus-Nord-Pastel-128GB-Storage/dp/B0BY8JZ22K/ref=sr_1_2?crid=15TYGNFGTD616&dib=eyJ2IjoiMSJ9.gh_-ziGKsABorU3mNEe-ixpKHQT2-tBl9yuI3Vsf0PoB9HN3nnBrvWe7SgZo4oG9mBcYc06fUFexB5Ha4MWlb-DBITUcvrUwwCoifWzr8tx8oQsk04Eci0O4sOqTHpJ5x2_wGsgu9hlTce-Pu8HcOlgXtoF0le8TLtqza9gg3C_qMI4FeuO7CL0NxNwZEQgHjEliBC96Xxtsn6Us0PW1sxNCNJt86O40HJFjzSoX-L1eqRXgu7UY2d7n3VHaSx2FCwMGGUDlmcSlB3aNJvb3yd_s8XIeKFrQidGn4pMoIIM.iQHSJwz7GIVVnvszDvAJ72qCLmKXhawr_iINfG9sH6o&dib_tag=se&keywords=oneplus%2Bnord%2Bce%2B3%2Blite%2B5%2Bg&nsdOptOutParam=true&qid=1732374313&s=electronics&sprefix=oneplus%2Bnord%2Bce%2B3%2Celectronics%2C332&sr=1-2&th=1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQTAmNURD82xBi6XvJmnXH1mmMs5zSWThNwEhZbmXzl7d4mGn9gqy0cLd2L4Yh7F3vnulQ1G8S3KBYyvJvLjpz1VVRla4EO_9Hw8YvySmmjBOCBkO2FnCGbbg&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">OnePlus Nord CE 3 Lite 5G (8GB RAM, 128GB, Pastel Lime)</h5>
+                  <p class="card-text">-22% ₹15,560
+                    M.R.P.: ₹19,999.00M.R.P.: ₹19,999.</p>
+                    <a href="https://www.amazon.in/OnePlus-Nord-Pastel-128GB-Storage/dp/B0BY8JZ22K/ref=sr_1_2?crid=15TYGNFGTD616&dib=eyJ2IjoiMSJ9.gh_-ziGKsABorU3mNEe-ixpKHQT2-tBl9yuI3Vsf0PoB9HN3nnBrvWe7SgZo4oG9mBcYc06fUFexB5Ha4MWlb-DBITUcvrUwwCoifWzr8tx8oQsk04Eci0O4sOqTHpJ5x2_wGsgu9hlTce-Pu8HcOlgXtoF0le8TLtqza9gg3C_qMI4FeuO7CL0NxNwZEQgHjEliBC96Xxtsn6Us0PW1sxNCNJt86O40HJFjzSoX-L1eqRXgu7UY2d7n3VHaSx2FCwMGGUDlmcSlB3aNJvb3yd_s8XIeKFrQidGn4pMoIIM.iQHSJwz7GIVVnvszDvAJ72qCLmKXhawr_iINfG9sH6o&dib_tag=se&keywords=oneplus%2Bnord%2Bce%2B3%2Blite%2B5%2Bg&nsdOptOutParam=true&qid=1732374313&s=electronics&sprefix=oneplus%2Bnord%2Bce%2B3%2Celectronics%2C332&sr=1-2&th=1" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+  
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.amazon.in/Vivo-Smartphone-Lotus-Purple-Storage/dp/B0DCGNMXDD/ref=asc_df_B0DCGNMXDD/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=9953569329422353805&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2365127927442&psc=1&mcid=154d84201bbf3f12935f4f2a7e7db37f&gad_source=4">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQZrO9zN73dYG8whdBtK0LhFGds_-x6hlbx221c3reRGuizYtClYrPSTUcE9h4coSbvkft4nWiTcbzw1yUk9T499KeOB5Ov6PofTjWFhaaySbkJUzlK0-X2y2Oehj7oWCKHcXo8vg&usqp=CAc" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vivo V40 5G Smartphone (Lotus Purple, 8GB RAM, 256GB Storage)</h5>
+                  <p class="card-text">-18% ₹35,150
+                    M.R.P.: ₹42,999.00M.R.P.: ₹42,999</p>
+                    <a href="https://www.amazon.in/Vivo-Smartphone-Lotus-Purple-Storage/dp/B0DCGNMXDD/ref=asc_df_B0DCGNMXDD/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=9953569329422353805&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2365127927442&psc=1&mcid=154d84201bbf3f12935f4f2a7e7db37f&gad_source=4" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3 mt-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.amazon.in/Oneplus-Open-Emerald-512GB-Storage/dp/B0CKTPK4FG/ref=asc_df_B0CKTPK4FG/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=9953569329422353805&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2267978452301&mcid=36fd197a1fe231f186fc1c5926638a59&gad_source=4&th=1">
+                <img src="https://m.media-amazon.com/images/I/71pKVhll1IL._SX679_.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Oneplus Open (Emerald Dusk, 16GB RAM, 512GB Storage)</h5>
+                  <p class="card-text">-29% ₹99,999
+                    M.R.P.: ₹1,39,999.00M.R.P.: ₹1,39,999</p>
+                    <a href="https://www.amazon.in/Oneplus-Open-Emerald-512GB-Storage/dp/B0CKTPK4FG/ref=asc_df_B0CKTPK4FG/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=9953569329422353805&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2267978452301&mcid=36fd197a1fe231f186fc1c5926638a59&gad_source=4&th=1" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 mt-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://www.wholemonkey.com/products/nokia-106-single-sim-keypad-phone-with-builtin-upi-payments-app-longlasting-battery-wireless-fm-radio-mp3-player-and-microsd-card-slot-charcoal-charcoal-SKU-1453?srsltid=AfmBOoo1-VdZKjAT9dIgfd3HIDc3wzutDwqkuChtt9ZeUTZkOYlWZtDSpec">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ6RP6oBwRZpIhhLbmjqdqw-n6MJOYEkzN8rhWBdog9-0gixXkuXzrl51_cxzhIoZNJkcMePbfs6Q40YPnQnozQo8FwOxf42xl8-PyYg4sewru6isi42eDoAw&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nokia 106 Single Sim, Keypad Phone with Built-in UPI Payments</h5>
+                  <p class="card-text">₹ 1,399 ₹ 2,499
+                    44%</p>
+                    <a href="https://www.wholemonkey.com/products/nokia-106-single-sim-keypad-phone-with-builtin-upi-payments-app-longlasting-battery-wireless-fm-radio-mp3-player-and-microsd-card-slot-charcoal-charcoal-SKU-1453?srsltid=AfmBOoo1-VdZKjAT9dIgfd3HIDc3wzutDwqkuChtt9ZeUTZkOYlWZtDSpec" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 mt-4">
+              <div class="card" style="width: 18rem;">
+                <a href="https://snapmint.com/p/motorola-edge-50-ultra-5g-nordic-wood-512-gb-12-gb-ram-new-launches-on-emi?srsltid=AfmBOoov8--qLfHNh7ijGQS953YeZFwT9izb3YPQVi9MJKVFoIWO19ANAdE">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTmeVIxj_Z9g1aKGzxtHd4CYhY0bPoMXJIUYrOyAOqXSdDMv5tky_YPVK1QLwgf1ffm4-N_7XATqQBr4GqbAIJstmJNaRWd9re6umu_YfPiprbg3gFdH1LI5g&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Motorola Edge 50 Ultra 5G (Nordic Wood, 512 GB) (12 GB RAM)</h5>
+                  <p class="card-text">₹54,999
+
+                    ₹64,999
+                    (15% off).</p>
+                    <a href="https://snapmint.com/p/motorola-edge-50-ultra-5g-nordic-wood-512-gb-12-gb-ram-new-launches-on-emi?srsltid=AfmBOoov8--qLfHNh7ijGQS953YeZFwT9izb3YPQVi9MJKVFoIWO19ANAdE" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card mt-4" style="width: 18rem;">
+                <a href="https://www.amazon.in/POCO-Snowstorm-White-RAM-Storage/dp/B0CSSD9QJR/ref=asc_df_B0CSSD9QJR/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=13327510562624507820&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2311007315964&mcid=661dbfb6d88c32d789f21889dd718d8d&gad_source=4&th=1">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTDdznz2NdosSnV4onBfVc5zs0s79B6VDdxZFYc2-o3d0KwXck1iUqUdAfZ8FIZVQUUQVEt_-M5ApfkYv1iKSR2kGi67VwMpoUpJo2_53vDfByZqyTA1eMozA&usqp=CAE" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">POCO X6 5G (Snowstorm White, 12 GB RAM 512 GB Storage)</h5>
+                  <p class="card-text">-29% ₹19,998
+                    M.R.P.: ₹27,999.00M.R.P.: ₹27,999.</p>
+                    <a href="https://www.amazon.in/POCO-Snowstorm-White-RAM-Storage/dp/B0CSSD9QJR/ref=asc_df_B0CSSD9QJR/?tag=googleshopdes-21&linkCode=df0&hvadid=709962856229&hvpos=&hvnetw=g&hvrand=13327510562624507820&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9149045&hvtargid=pla-2311007315964&mcid=661dbfb6d88c32d789f21889dd718d8d&gad_source=4&th=1" class="btn btn-warning">Buy Now</a></a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+
+        </div>
+        
+      <h4 class="text-light mt-4">Choose Your type</h4>
+      
+        <div class="pic-ctn">
+         <a href="https://easyphones.co.in/collections/apple/products/renewed-apple-iphone-11-pro-new-like-condition-zero-scratches-6-month-warranty?gad_source=1&gclid=CjwKCAiA9IC6BhA3EiwAsbltOD3H-8kWp2-au1MAl4xK280X17xrIgTx9l-fW_QbuEarLxFZQ262mBoCy44QAvD_BwE"> <img src="https://media.wired.com/photos/66df337dfb7d4953b6dc5f31/master/w_2560%2Cc_limit/Screenshot%25202024-09-09%2520at%252010.42.09%25E2%2580%25AFAM.png"  width="30%" height="300px" alt="" class="pic"></a>
+         <a href="https://easyphones.co.in/search?type=product&options%5Bprefix%5D=last&q=android"> <img src="https://smallandroidphone.com/assets/title.webp" width="30%" height="300px" alt="" class="pic"></a>
+          <a href="https://www.amazon.in/Nokia-All-New-Payments-Long-Lasting-Wireless/dp/B0C5RJDJPV?th=1"><img src="https://helios-i.mashable.com/imagery/articles/002Wu3u6wxSexLWG6T6oyVP/hero-image.fill.size_1200x1200.v1623363425.jpg"  width="30%" height="300px" alt="" class="pic"></a>
+          
+        </div>
+      <footer>
+        <div class="row">
+          <div class="col-4">
+            <h5 class="text-light mt-4">Contact With Us</h5>
+            <input class="form-control me-2" type="search" placeholder="Enter Your Email ID">
+            <i class="fa-brands fa-facebook-f fa-2xl p-3 mt-3" style="color: #b0b9cf;"></i>
+             <i class="fa-brands fa-instagram fa-2xl p-3" style="color: #b0b9cf;"></i>
+             <i class="fa-brands fa-linkedin fa-2xl p-3 mt-3" style="color: #b0b9cf;"></i>
+              <i class="fa-brands fa-twitter fa-2xl p-3 mt-3" style="color: #b0b9cf;"></i>
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+               <h6 class="text-light text-center mt-4">© Copyright 2024 Tech Mart All rights reserved</h6>
+            </div>
+          </div>
+      
+               <div class="col-md-4 ">
+               
+                <P class="mt-3"><a class="text-light" href="">Phones & Wearables</a></P>
+                <P class="mt-3"><a class="text-light" href=""> Computers & Tablets</a></P>
+                <P class="mt-3"><a class="text-light" href="">Televisions & Accessories</a></P>
+                <P class="mt-3"><a class="text-light" href="">Home Appliances</a></P>
+                <P class="mt-3"><a class="text-light" href="">Smart Devices</a></P>
+                <P class="mt-3"><a class="text-light" href="">Audio & Video</a></P>
+                <P class="mt-3"><a class="text-light" href=""> Accessoriess</a></P>
+                <P class="mt-3"><a class="text-light" href=""> Top Brands</a></P>
+              </div>
+                </div>
+               
+
+          </div>
+
+        </div>
+      </footer>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+ </body>
+</html>
